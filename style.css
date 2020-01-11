@@ -1,0 +1,73 @@
+body{
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+header{
+    background-color:rgb(241, 207, 183);
+    min-height: 100vh;
+    /* min-height: 100vh; making sure the height is at least this tall so that it fits on any device perfectly */
+    text-align: center;
+}
+
+nav{
+    background-color: rgb(208, 238, 236);
+    width: 100%;
+    position: fixed;
+}
+
+nav a{
+    text-decoration: none;
+    color: grey;
+}
+
+nav li{
+    display: inline-block;
+    padding-right: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+header main {
+    padding-top: 60px;
+    text-align: centre;
+}
+
+header img{
+    width: 60%;
+    border-radius: 100%;
+    
+}
+
+/* use % for width, rem for font sizes */
+
+.about-me{
+    background-color:rgb(241, 207, 183);
+    padding: 60px 60px;
+    padding-bottom: 0;
+
+    /* padding: top bottom & left right */
+}
+
+.about-me p {
+    margin-bottom: 0;
+}
+
+.projects{
+    background-color:rgb(241, 207, 183);
+    padding: 60px 60px;
+}
+
+
+.projects img{
+    width: 30%;
+    padding: 20px 40px 20px;
+    box-sizing: border-box;
+    /* border box so padding calculation is included with the width */
+    padding-left: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
