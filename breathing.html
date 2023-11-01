@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meditation</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #efebd9;
+      }
+
+      p {
+        margin-top: 100px;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 20px auto;
+        animation: breathe 18s infinite alternate ease-in-out,
+          changeColor 18s infinite alternate ease-in-out;
+      }
+
+      .instructions {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #3a3a3a;
+      }
+
+      @keyframes breathe {
+        0%,
+        100% {
+          transform: scale(1);
+          animation-timing-function: ease-in-out;
+        }
+        35% {
+          transform: scale(1.8);
+          animation-timing-function: ease-in-out;
+        }
+      }
+
+      :root {
+        --pastel-color-1: #add8e6; /* Pastel Purple */
+        --pastel-color-2: #d7b6ff; /* Pastel Blue */
+      }
+
+      @keyframes changeColor {
+        0%,
+        100% {
+          background-color: var(--pastel-color-1);
+        }
+        50% {
+          background-color: var(--pastel-color-2);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle"></div>
+      <div class="instructions">
+        <p>Breathe in for 5, breathe out for 8</p>
+      </div>
+    </div>
+  </body>
+</html>
